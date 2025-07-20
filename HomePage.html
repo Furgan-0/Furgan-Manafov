@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #fff; /* Light text */
+            overflow: scroll; /* Show scrollbars */
+            cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23797979" stroke="%23000" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto; /* Custom cursor */
+        }
+
+        /* Modern custom scrollbar styles */
+        body::-webkit-scrollbar {
+            width: 12px;
+            background: #181818;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #0a9396 0%, #fca311 100%);
+            border-radius: 8px;
+            border: 2px solid #181818;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: #181818;
+            border-radius: 8px;
+        }
+
+        /* Firefox */
+        body {
+            scrollbar-width: thin;
+            scrollbar-color: #fca311 #181818;
+        }
+
+        /* Particles container */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Behind all content */
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(30, 30, 30, 0.8); /* Dark translucent background */
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: left; /* Remove center alignment */
+        }
+
+        .logo {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Optional: subtle shadow for modern look */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff; /* Light text */
+            font-weight: bold;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-color: rgba(40, 40, 40, 0.7); /* Dark translucent background */
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        /* About Me Section Styles */
+        .about-me {
+            padding: 50px 20px;
+        }
+
+        /* Portfolio Section Styles */
+        .portfolio {
+            padding: 50px 20px;
+            background-color: rgba(50, 50, 50, 0.7); /* Dark translucent background */
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            border: 1px solid #555; /* Darker border */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Contact Section Styles */
+        .contact {
+            padding: 50px 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222; /* Dark background */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="logo">
+            <img src="Untitled design (6).ico" alt="Your Logo" width="25">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Furgan Manafov - Portfolio</h1>
+        <p>I like coding</p>
+    </section>
+
+    <section id="about" class="about-me">
+        <h2>About Me</h2>
+        <p>I'm a leading engineer. Learning enthusiast with a passion for coding and technology.</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2 title="comging soon">Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" title="available soon">Project 1</div>
+            <div class="portfolio-item" title="available soon">Project 2</div>
+            <div class="portfolio-item" title="available soon">Project 3</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p><i class="fa-solid fa-envelope"; style="color: #4a4e69;"></i> <i><span style="color: #f4f3ee;" class="email">Manafovfurgan@gmail.com</span></i></p>
+        <p><i class="fa-solid fa-phone"; style="color: #4a4e69;"></i> <i><span style="color: #f4f3ee;" class="phone">+222 33 00 22 66</span></i></p>
+        <p><i class="fa-brands fa-twitter"; style="color: #4a4e69;"></i> <i><span style="color: #f4f3ee;" class="twitter">twitter.com/furgan_manafov</span></i></p>
+        <p><i class="fa-brands fa-instagram"; style="color: #4a4e69;"></i> <i><span style="color: #f4f3ee;" class="instagram">instagram.com/furgan_manafov</span></i></p>
+        <p><i class="fa-brands fa-telegram"; style="color: #4a4e69;"></i> <i><span style="color: #f4f3ee;" class="telegram">t.me/furgan_manafov</span></i></p>
+        <p><i class="fa-brands fa-whatsapp"; style="color: #4a4e69;"></i> <i><span style="color: #f4f3ee;" class="whatsapp">+964 781 989 8437</span></i></p>
+        <p><i class="fa-brands fa-discord"; style="color: #4a4e69;"></i> <i><span style="color: #f4f3ee;" class="discord">furgan_manafov#1234</span></i></p>
+        <p><i class="fa-brands fa-youtube"; style="color: #4a4e69;"></i> <i><span style="color: #f4f3ee;" class="youtube">furgan_manafov</span></i></p>
+        <p><i class="fa-solid fa-location-dot"; style="color: #4a4e69;"></i> <i><span style="color: #f4f3ee;" class="address">Autoroute Nouadhibou, Nouakchott, Mauritania Mauritania, Nouakchott, Mauritania</span></i></p>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Furgan Manafov</p>
+                    <ul>
+                        <table>
+                            <tr>
+                                <td><a href="#home">Home</a></td>
+                                <td><a href="#about">About Me</a></td>
+                                <td><a href="#portfolio">Portfolio</a></td>
+                                <td><a href="#contact">Contact</a></td>
+                            </tr>
+                        </table>
+                    </ul>
+        <p>Follow me on <a href="https://twitter.com/furgan_manafov">Twitter</a></p>
+    </footer>
+
+    <!-- Include particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 20
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 500,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 500,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 10,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 500
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+</body>
+</html>
